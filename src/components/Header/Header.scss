@@ -1,7 +1,7 @@
 @use '../../Styles/vars';
 
 header{
-  background-color: vars.$secondary-color;
+  background-color: vars.$orange;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -10,27 +10,24 @@ header{
   .logo{
     display: flex;
   }
-  a{
-    color: vars.$light-color;
+  nav{
     display: flex;
+    gap: vars.$gutter;
+  }
+  a{
+    color: vars.$dark-color;
+    text-decoration: none;
+    display: flex;
+    font-weight: 700;
     align-items: center;
     gap: 1em;
+    transition: ease 0.3s;
+    &:hover{
+      scale: 1.2;
+      transition: ease 0.3s;
+    }
   };
-  button{
-    color: white;
-    width: 5em;
-    border: none;
-    background-color: vars.$secondary-color;
-  }
-  .connectLink{
+  .active{
     color: vars.$light-color;
-    background-color: vars.$secondary-color-light;
-    border: none;
-    border-radius: 0.8em;
-    height: auto;
-    padding: 0.5em;
-    &:hover {
-      background-color: vars.$primary-color;
-  }
   }
 }

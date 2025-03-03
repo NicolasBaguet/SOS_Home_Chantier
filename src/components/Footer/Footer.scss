@@ -2,23 +2,26 @@
 
 
 footer{
+  display: flex;
+  flex-direction: column;
+  background-color: vars.$orange;
+  padding: 1.3em;
+  .links{
     display: flex;
-    flex-direction: column;
-    background-color: vars.$grey-color;
-    padding: 1.3em;
-    .links{
-      display: flex;
-      justify-content:space-around;
-    }
-    .link{
-      width:6em;
-      
-    }
-    a{ color: vars.$primary-color;
-      &:hover {
-        color: vars.$primary-color-light;
+    justify-content:space-around;
+  }
+  .link{
+    width:6em;
+  }
+  a{ color: vars.$dark-color;
+    text-decoration: none;
+    transition: ease 0.3s;
+
+    &:hover {
+      scale: 1.2;
+      transition: ease 0.3s;
       }}
-    p{
-      padding:1.3em
-    }
+  p{
+    padding:1.3em
+  }
 }

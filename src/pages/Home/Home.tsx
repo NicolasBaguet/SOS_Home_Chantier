@@ -1,14 +1,20 @@
+import "./Home.scss";
+
 function Home() {
 	return (
 		<>
 			<section className="hero">
 				<div className="backgroundImg">
-					<h2>Phrase d'accroche à l'entrée du site</h2>
+					<div className="filterblack">
+						<h2>
+							Phrase d'accroche à l'entrée du site, avec photo en arrière plan
+						</h2>
+					</div>
 				</div>
 			</section>
 			<section className="content">
 				<h3>Nos Services</h3>
-				<div className="serviceContainer">
+				<div className="container">
 					<div className="service">
 						<img src="#" alt="dessin ou logo" />
 						<h4>Agence</h4>
@@ -26,9 +32,9 @@ function Home() {
 					</div>
 				</div>
 			</section>
-			<section className="rate">
+			<section className="rates">
 				<h3>Nos avis</h3>
-				<div className="rateContainer">
+				<div className="container">
 					<div className="rate">
 						<h4>Nom</h4>
 						<p>Texte</p>
@@ -43,8 +49,6 @@ function Home() {
 					</div>
 				</div>
 			</section>
-			<h3>404 Page non trouvée</h3>
-			<p>La page actuelle n'existe pas.</p>
 		</>
 	);
 }

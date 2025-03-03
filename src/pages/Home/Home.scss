@@ -1,0 +1,35 @@
+@use '../../Styles/vars';
+
+.hero, .content, .rates{
+  height: 20em;
+}
+.container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: vars.$gutter
+}
+.hero{
+  .filterblack{
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 20em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h2{
+      color: vars.$light-color;
+    }
+  }
+}
+.service{
+  background-color: vars.$green;
+  padding: 1em;
+  border-radius: 4px;
+  width: 20rem;
+  height: 16rem;
+}
+.rate{
+  background-color: vars.$brown;
+  padding: 1em;
+  border-radius: 4px;
+}
