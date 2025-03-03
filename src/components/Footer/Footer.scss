@@ -1,0 +1,24 @@
+@use  '../../Styles/vars';
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: vars.$grey-color;
+    padding: 1.3em;
+    .links{
+      display: flex;
+      justify-content:space-around;
+    }
+    .link{
+      width:6em;
+      
+    }
+    a{ color: vars.$primary-color;
+      &:hover {
+        color: vars.$primary-color-light;
+      }}
+    p{
+      padding:1.3em
+    }
+}

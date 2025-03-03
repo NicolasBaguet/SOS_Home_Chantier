@@ -1,0 +1,23 @@
+[
+	{
+		"title": "Agence",
+		"slug": "agence_immobiliere",
+		"subtitle": "l'agence c'est cool",
+		"content": "texte",
+		"img": "url de l'image"
+	},
+	{
+		"title": "particulier a",
+		"slug": "particulier-a",
+		"subtitle": "particulier a, c'est cool",
+		"content": "texte",
+		"img": "url de l'image"
+	},
+	{
+		"title": "particulier b",
+		"slug": "particulier-b",
+		"subtitle": "particulier b, c'est cool",
+		"content": "texte",
+		"img": "url de l'image"
+	}
+]

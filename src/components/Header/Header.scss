@@ -1,0 +1,36 @@
+@use '../../Styles/vars';
+
+header{
+  background-color: vars.$secondary-color;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.3em;
+  .logo{
+    display: flex;
+  }
+  a{
+    color: vars.$light-color;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+  };
+  button{
+    color: white;
+    width: 5em;
+    border: none;
+    background-color: vars.$secondary-color;
+  }
+  .connectLink{
+    color: vars.$light-color;
+    background-color: vars.$secondary-color-light;
+    border: none;
+    border-radius: 0.8em;
+    height: auto;
+    padding: 0.5em;
+    &:hover {
+      background-color: vars.$primary-color;
+  }
+  }
+}
