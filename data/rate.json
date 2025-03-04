@@ -22,11 +22,5 @@
 		"content": "texte",
 		"rate": "5/5",
 		"img": "url de l'image"
-	},
-	{
-		"name": "John doe 5",
-		"content": "texte",
-		"rate": "5/5",
-		"img": "url de l'image"
 	}
 ]

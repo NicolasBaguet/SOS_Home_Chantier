@@ -5,6 +5,7 @@ import "./App.scss";
 import Footer from "../Footer/Footer";
 import NoFound from "../../pages/NoFound/NoFound";
 import Services from "../../pages/Services/Services";
+import LegalMentions from "../../pages/LegalsMentions/LegalMentions";
 
 function App() {
 	return (
@@ -17,6 +18,7 @@ function App() {
 					<Route path="/services/:choix" element={<Services />} />
 					<Route path="/portfolio" element={<Home />} />
 					<Route path="/apropos" element={<Home />} />
+					<Route path="/mentions" element={<LegalMentions />} />
 					<Route path="*" element={<NoFound />} />
 				</Routes>
 			</main>

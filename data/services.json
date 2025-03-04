@@ -1,23 +1,16 @@
 [
 	{
-		"title": "Agence",
-		"slug": "agence_immobiliere",
-		"subtitle": "l'agence c'est cool",
+		"title": "Professionnel",
+		"slug": "professionnel",
+		"subtitle": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam modi porro dolorum voluptates, necessitatibus rerum dolore iure, culpa deserunt a, sequi numquam amet fugiat! Sapiente minus autem repellendus placeat odit?",
 		"content": "texte",
-		"img": "url de l'image"
+		"img": "./data/plan_2.jpg"
 	},
 	{
-		"title": "particulier a",
-		"slug": "particulier-a",
-		"subtitle": "particulier a, c'est cool",
+		"title": "Particulier",
+		"slug": "particulier",
+		"subtitle": "Chaque détail compte pour concevoir un intérieur en harmonie avec vos aspirations profondes. Des aménagements pensés pour nourrir votre esprit et apaiser votre cœur.",
 		"content": "texte",
-		"img": "url de l'image"
-	},
-	{
-		"title": "particulier b",
-		"slug": "particulier-b",
-		"subtitle": "particulier b, c'est cool",
-		"content": "texte",
-		"img": "url de l'image"
+		"img": "./data/travail_1.jpg"
 	}
 ]

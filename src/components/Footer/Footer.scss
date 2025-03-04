@@ -4,6 +4,7 @@
 footer{
   display: flex;
   flex-direction: column;
+  width: 100%;
   background-color: vars.$orange;
   padding: 1.3em;
   .links{
@@ -11,7 +12,11 @@ footer{
     justify-content:space-around;
   }
   .link{
-    width:6em;
+    width:15em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   a{ color: vars.$dark-color;
     text-decoration: none;

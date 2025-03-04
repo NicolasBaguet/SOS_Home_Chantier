@@ -14,21 +14,26 @@ function Header() {
 				<NavLink to="/" aria-label="retour accueil">
 					Accueil
 				</NavLink>
-				<NavLink
-					to="/services/agence-immobiliere"
-					aria-label="agence immobilière"
+				<NavLink to="/services/professionnel" aria-label="professionnel">
+					Professionnel
+				</NavLink>
+				<NavLink to="/services/particulier" aria-label="particulier">
+					Particulier
+				</NavLink>
+				<NavLink to="/portfolio" aria-label="À propos">
+					À propos
+				</NavLink>
+				<button
+					type="button"
+					onClick={() => {
+						window.scrollTo({
+							top: document.documentElement.scrollHeight,
+							behavior: "smooth",
+						});
+					}}
 				>
-					Agence Immobilière
-				</NavLink>
-				<NavLink to="/services/particulier-a" aria-label="particulier A">
-					Particulier A
-				</NavLink>
-				<NavLink to="/services/particulier-b" aria-label="particulier B">
-					Particulier B
-				</NavLink>
-				<NavLink to="/portfolio" aria-label="réalisations">
-					Realisations
-				</NavLink>
+					Me contacter
+				</button>
 			</nav>
 		</header>
 	);

@@ -3,6 +3,9 @@
 header{
   background-color: vars.$orange;
   display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
@@ -13,8 +16,18 @@ header{
   nav{
     display: flex;
     gap: vars.$gutter;
+    a, button{
+      &:hover{
+        scale: 1.2;
+        transition: ease 0.3s;
+      }
+    }
   }
-  a{
+  button{
+    border: none;
+    background-color: vars.$orange;
+  }
+  a, button{
     color: vars.$dark-color;
     text-decoration: none;
     display: flex;
@@ -22,11 +35,7 @@ header{
     align-items: center;
     gap: 1em;
     transition: ease 0.3s;
-    &:hover{
-      scale: 1.2;
-      transition: ease 0.3s;
-    }
-  };
+  }
   .active{
     color: vars.$light-color;
   }
