@@ -1,7 +1,7 @@
 @use '../../Styles/vars';
 
-.home{
-.hero, .rates{
+.prestations{
+.content, .rates{
   min-height: 20em;
 }
 .container{
@@ -25,7 +25,7 @@
     }
   };
   .backgroundImg{
-    background-image: url("./data/deco.jpg");
+    background-image: url("./data/plan_2.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -83,17 +83,5 @@
   .serviceTxt{
     padding-right: 5em;
   }
-}
-.rates{
-  h3{
-    padding-left: 6em;
-  }
-}
-.rate{
-  background-color: vars.$blue;
-  padding: 1em;
-  border-radius: 4px;
-  width: 20rem;
-  height: 10rem;
 }
 }

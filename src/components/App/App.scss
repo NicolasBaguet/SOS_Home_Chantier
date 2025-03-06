@@ -7,9 +7,20 @@ body{
 h3{
   text-align: left;
   margin-left: 2em;
-  padding: 1em;
 }
 
 a{
   text-decoration: none;
+}
+.citation{
+  color: #627E61;
+  margin: 2em 1em;
+  padding: 0.5em;
+  border-radius: 2px;
+  .citationTxt{
+    font-style: italic;
+  }
+  .citationAuthor{
+    text-align: end;
+  }
 }

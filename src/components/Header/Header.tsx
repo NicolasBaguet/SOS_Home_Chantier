@@ -4,24 +4,23 @@ import "./Header.scss";
 function Header() {
 	return (
 		<header className="header">
-			<div className="logo">
-				<Link to="/" aria-label="retour accueil">
-					<img src="#" alt="Logo site" />
-					<h1>SOS HOME CHANTIER</h1>
-				</Link>
-			</div>
+			<Link to="/" aria-label="retour accueil">
+				<div className="logo">
+					<img src="./data/SOS_logo2.png" alt="Logo site" />
+				</div>
+			</Link>
 			<nav>
 				<NavLink to="/" aria-label="retour accueil">
 					Accueil
 				</NavLink>
-				<NavLink to="/services/professionnel" aria-label="professionnel">
-					Professionnel
+				<NavLink to="/prestations" aria-label="prestations">
+					Prestations
 				</NavLink>
-				<NavLink to="/services/particulier" aria-label="particulier">
-					Particulier
-				</NavLink>
-				<NavLink to="/portfolio" aria-label="À propos">
+				<NavLink to="/propos" aria-label="À propos">
 					À propos
+				</NavLink>
+				<NavLink to="/realisations" aria-label="realisations">
+					Realisations
 				</NavLink>
 				<button
 					type="button"

@@ -1,25 +1,25 @@
 [
 	{
 		"name": "John doe",
-		"content": "texte",
+		"content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi placeat repellat a nulla eaque ipsam optio? Fuga at autem est magni quae nulla optio quidem!",
 		"rate": "5/5",
 		"img": "url de l'image"
 	},
 	{
 		"name": "John doe 2",
-		"content": "texte",
+		"content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi placeat repellat a nulla eaque ipsam optio? Fuga at autem est magni quae nulla optio quidem!",
 		"rate": "5/5",
 		"img": "url de l'image"
 	},
 	{
 		"name": "John doe 3",
-		"content": "texte",
+		"content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi placeat repellat a nulla eaque ipsam optio? Fuga at autem est magni quae nulla optio quidem!",
 		"rate": "5/5",
 		"img": "url de l'image"
 	},
 	{
 		"name": "John doe 4",
-		"content": "texte",
+		"content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi placeat repellat a nulla eaque ipsam optio? Fuga at autem est magni quae nulla optio quidem!",
 		"rate": "5/5",
 		"img": "url de l'image"
 	}
