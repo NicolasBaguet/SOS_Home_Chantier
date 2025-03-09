@@ -6,6 +6,7 @@ import Footer from "../Footer/Footer";
 import NoFound from "../../pages/NoFound/NoFound";
 import LegalMentions from "../../pages/LegalsMentions/LegalMentions";
 import Prestations from "../../pages/Prestations/Prestations";
+import Realisations from "../../pages/Realisations/Realisations";
 
 function App() {
 	return (
@@ -16,7 +17,7 @@ function App() {
 					<Route path="/" element={<Home />} />
 					{/* services parmi les 3 pages de services */}
 					<Route path="/prestations" element={<Prestations />} />
-					<Route path="/realisations" element={<Prestations />} />
+					<Route path="/realisations" element={<Realisations />} />
 					<Route path="/propos" element={<Home />} />
 					<Route path="/mentions" element={<LegalMentions />} />
 					<Route path="*" element={<NoFound />} />
