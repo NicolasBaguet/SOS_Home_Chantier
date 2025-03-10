@@ -12,11 +12,11 @@ function Home() {
 				</div>
 			</section>
 			<div className="citation">
-				<h3 className="citationTxt">
+				<h2 className="citationTxt">
 					« L’architecture est le jeu savant, correct et magnifique des formes
 					assemblées dans la lumière ! »
-				</h3>
-				<h3 className="citationAuthor">Le Corbusier</h3>
+				</h2>
+				<h2 className="citationAuthor">Le Corbusier</h2>
 			</div>
 			<section className="rates">
 				<h3>Nos avis</h3>

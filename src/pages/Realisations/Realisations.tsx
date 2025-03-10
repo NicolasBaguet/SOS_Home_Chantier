@@ -12,11 +12,10 @@ function Realisations() {
 				</div>
 			</section>
 			<div className="citation">
-				<h3 className="citationTxt">
-					« L’architecture est le jeu savant, correct et magnifique des formes
-					assemblées dans la lumière ! »
-				</h3>
-				<h3 className="citationAuthor">Le Corbusier</h3>
+				<h2 className="citationTxt">
+					« Les détails ne sont pas les détails. Ils font le design. »
+				</h2>
+				<h2 className="citationAuthor">Charles Eames</h2>
 			</div>
 			<section className="content">
 				<h3>Mes Realisations</h3>

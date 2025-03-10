@@ -7,6 +7,7 @@ import NoFound from "../../pages/NoFound/NoFound";
 import LegalMentions from "../../pages/LegalsMentions/LegalMentions";
 import Prestations from "../../pages/Prestations/Prestations";
 import Realisations from "../../pages/Realisations/Realisations";
+import About from "../../pages/About/About";
 
 function App() {
 	return (
@@ -18,7 +19,7 @@ function App() {
 					{/* services parmi les 3 pages de services */}
 					<Route path="/prestations" element={<Prestations />} />
 					<Route path="/realisations" element={<Realisations />} />
-					<Route path="/propos" element={<Home />} />
+					<Route path="/propos" element={<About />} />
 					<Route path="/mentions" element={<LegalMentions />} />
 					<Route path="*" element={<NoFound />} />
 				</Routes>

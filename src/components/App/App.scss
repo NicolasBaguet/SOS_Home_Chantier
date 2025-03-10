@@ -6,16 +6,24 @@ body{
 }
 
 h3{
-  text-align: left;
-  margin-left: 2em;
-  color: vars.$green-dark;
+  text-align: center;
+  display: inline-block;
+  margin: auto;
+  padding: 0.5em 1em;
+  color: vars.$orange-dark;
+  border-radius: 0.2em;
+  background-color: rgb(39, 44, 39);
+}
+
+h4{
+  text-transform: uppercase;
 }
 
 a{
   text-decoration: none;
 }
 .citation{
-  color: vars.$green-dark;
+  color: vars.$orange-dark;
   margin: 2em 1em;
   padding: 0.5em;
   border-radius: 2px;
@@ -24,5 +32,6 @@ a{
   }
   .citationAuthor{
     text-align: end;
+    font-size: 2em;
   }
 }
