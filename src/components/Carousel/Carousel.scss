@@ -2,8 +2,12 @@
 
 .carousel {
   position: relative;
+  margin: auto;
   width: 100%;
-  height: 38em;
+  height: 20em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 8px; // Bordures arrondies pour un meilleur rendu
   overflow: hidden; // Empêche les images de déborder en dehors du conteneur
  
@@ -11,8 +15,11 @@
   .carouselImages {
     display: flex; // Permet un affichage horizontal des images
     height: 100%;
+    align-items: center;
 
     .carouselImage {
+      border-radius: 8px; // Bordures arrondies pour un meilleur rendu
+
       height: auto; // Maintient les proportions de l'image
       object-fit: cover; // Ajuste l'image pour qu'elle ne déborde pas verticalement
     }
@@ -22,7 +29,7 @@
     position: absolute;
     top: 50%; // Centre verticalement le bouton
     transform: translateY(-50%); // Ajuste pour que le bouton soit parfaitement centré
-    background-color: rgba(0, 0, 0, 0.5); // Fond semi-transparent pour les boutons
+    background-color: rgba(0, 0, 0, 0.3); // Fond semi-transparent pour les boutons
     color: white;
     border: none;
     padding: 10px;
@@ -38,7 +45,7 @@
     }
 
     &:hover {
-      background-color: rgba(0, 0, 0, 0.7); // Change la couleur au survol pour un effet visuel
+      background-color: rgba(0, 0, 0, 0.6); // Change la couleur au survol pour un effet visuel
     }
   }
   .modal {
@@ -72,7 +79,7 @@
         width: auto;
         height: auto;
         max-width: 100%;
-        max-height: 100%;
+        max-height: 90dvh;
         border-radius: 8px; // Bordures arrondies pour un meilleur rendu
       }
       

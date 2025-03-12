@@ -23,8 +23,13 @@ header{
       object-fit: cover;
     }
   }
+  .menuButton{
+    font-size: 3em;
+    margin: auto;
+  }
   nav{
     display: flex;
+    flex-wrap: wrap;
     gap: vars.$gutter;
     a, button{
       &:hover{
@@ -38,7 +43,7 @@ header{
     background-color: vars.$orange;
   }
   a, button{
-    color: vars.$dark-color;
+    color: black;
     text-decoration: none;
     display: flex;
     font-weight: 700;

@@ -2,7 +2,7 @@
 
 body{
   scroll-behavior: smooth;
-  background-color: black;
+  background-color: vars.$dark-color;
 }
 
 h3{
@@ -12,7 +12,7 @@ h3{
   padding: 0.5em 1em;
   color: vars.$orange-dark;
   border-radius: 0.2em;
-  background-color: rgb(39, 44, 39);
+  background-color: rgb(26, 26, 26);
 }
 
 h4{

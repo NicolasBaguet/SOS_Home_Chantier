@@ -6,16 +6,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import "./Carousel.scss";
 
-function Carousel() {
+function Carousel({ images }: { images: string[] }) {
 	// Liste des images
-	const images = [
-		"./data/lions.png",
-		"./data/plan.jpg",
-		"./data/plan_2.jpg",
-		"./data/bureau.jpg",
-		"./data/travail_1.jpg",
-		"./data/travail_2.jpg",
-	];
 
 	// État pour ouvrir/fermer la modal de photos détaillées
 	const [isModalOpen, setIsModalOpen] = useState(false);

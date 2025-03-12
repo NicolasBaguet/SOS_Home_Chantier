@@ -44,13 +44,16 @@
     padding: 2em;
     border-radius: 0.5em;
     width: 100%;
-    height: 25rem;
+    min-height: 25rem;
     display: flex;
     overflow: hidden;
     .serviceImg{
       height: 70%;
       width: 20em;
       margin: auto;
+      @media(max-width: 800px){
+        display: none;
+      }
       img{
         height: 100%;
         object-fit: cover;
@@ -74,13 +77,17 @@
   .serviceA{
     background-color: vars.$green;
     .serviceTxt{
-      padding-left: 5em;
+      @media(min-width: 800px){
+        padding-left: 5em;
+      }
     }
   }
   .serviceB{
     background-color: vars.$brown;
     .serviceTxt{
-      padding-right: 5em;
+      @media(min-width: 800px){
+        padding-right: 5em;
+      }
     }
   }
 }
