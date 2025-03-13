@@ -1,44 +1,8 @@
 @use '../../Styles/vars';
 
 .realisations{
-  .content, .rates{
-    min-height: 20em;
-  }
-  .container{
-    padding : vars.$gutter;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: vars.$gutter
-  }
-  .hero{
-    padding-top: 5em;
-    .filterblack{
-      background-color: rgba(0, 0, 0, 0.2);
-      height: 20em;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      h2{
-        color: vars.$light-color;
-      }
-    };
-    .backgroundImg{
-      background-image: url("./data/travail_2.jpg");
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      h2{
-        text-shadow: 1.5px 1.5px 2px black;
-      }
-    }
-  }
   .content{
-    a{
-      color: black;
-      width: 95%;
-    }
+    min-height: 20em;
   }
   .serviceA, .serviceB{
     padding: 1em;
@@ -48,6 +12,7 @@
     gap: 2em;
     overflow: hidden;
     display: flex;
+    align-items: center;
     @media(max-width: 800px){
       flex-direction: column;
     }
@@ -101,7 +66,9 @@
   .serviceB{
     .serviceTxt{
       background-color: vars.$brown;
-
+      @media(max-width: 800px){
+        order: 2;
+      }
     }
   //   transform: translateX(100%);
   

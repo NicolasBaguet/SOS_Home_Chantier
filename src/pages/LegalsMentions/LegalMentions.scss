@@ -2,35 +2,27 @@
 
 
 .legal-mentions{ 
- padding: 2rem;
-    /*   paragraphe */
-     h1 {
-       margin: 10px;
-       text-decoration: solid;
-     }
-     h2{
-      padding-top: 5em;
-     }
-     p, ul, h2 {
-       font-size: 1rem;
-       margin-bottom: 20px;
-       text-align: left; 
-   
-     }
-     
-     ul {
-       list-style-type: circle;
-       margin-left: 20px;
-     }
-     
-     li {
-       margin-bottom: 10px;
-     }
-     
-     
-    a {
-       padding: 5px 2px;
-       text-decoration: none;
-       color: vars.$dark-color;
-     }    
-     };
+  .grey{
+    background-color: vars.$dark-color;
+    padding: 1em;
+  }
+  &>*:not(.citation){
+    color: white;
+  }
+  p, ul {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    text-align: left; 
+  }
+  ul {
+    list-style-type: circle;
+    margin-left: 20px;
+  }
+  li {
+    margin-bottom: 10px;
+  }
+  a {
+    padding: 5px 2px;
+    text-decoration: none;
+  }    
+  };

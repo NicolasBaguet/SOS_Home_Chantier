@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import Header from "../Header/Header";
 import Home from "../../pages/Home/Home";
 import "./App.scss";
@@ -8,8 +8,15 @@ import LegalMentions from "../../pages/LegalsMentions/LegalMentions";
 import Prestations from "../../pages/Prestations/Prestations";
 import Realisations from "../../pages/Realisations/Realisations";
 import About from "../../pages/About/About";
+import { useEffect } from "react";
 
 function App() {
+	const location = useLocation();
+	// biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, [location.pathname]);
+
 	return (
 		<div className="app">
 			<Header />

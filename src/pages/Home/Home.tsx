@@ -18,7 +18,7 @@ function Home() {
 				</h2>
 				<h2 className="citationAuthor">Le Corbusier</h2>
 			</div>
-			<section className="rates">
+			<section className="content">
 				<h3>Nos avis</h3>
 				<div className="container">
 					{ratesMessage.map((message) => (

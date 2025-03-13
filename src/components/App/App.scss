@@ -2,36 +2,82 @@
 
 body{
   scroll-behavior: smooth;
-  background-color: vars.$dark-color;
+  background-color: black;
 }
 
 h3{
   text-align: center;
-  display: inline-block;
-  margin: auto;
-  padding: 0.5em 1em;
-  color: vars.$orange-dark;
-  border-radius: 0.2em;
-  background-color: rgb(26, 26, 26);
+  text-transform: uppercase;
+  padding: 1em;
+  color: vars.$orange;
+  text-shadow: 0.5px 0.5px 0.5px rgb(228, 129, 0);
+  font-size: 3em;
+  font-weight: 600;
+  background-color: vars.$dark-color;
 }
 
 h4{
   text-transform: uppercase;
+  text-shadow: 0.3px 0.3px 0.3px rgb(0, 0, 0);
+
 }
 
 a{
   text-decoration: none;
 }
+
+.hero{
+  min-height: 20em;
+  padding-top: 5em;
+  .filterblack{
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 20em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h2{
+      color: vars.$light-color;
+    }
+  };
+  .backgroundImg{
+    background-image: url("./data/deco.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    h2{
+      text-shadow: 1.5px 1.5px 2px black;
+    }
+  }
+}
+
+.container{
+  padding : vars.$gutter;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6em
+}
+
 .citation{
   color: vars.$orange-dark;
   margin: 2em 1em;
   padding: 0.5em;
   border-radius: 2px;
+  text-shadow: 0.3px 0.3px 0.3px rgb(228, 129, 0);
   .citationTxt{
     font-style: italic;
   }
   .citationAuthor{
     text-align: end;
     font-size: 2em;
+  }
+}
+.content{
+  border-left: vars.$dark-color solid 1.5em;
+  border-right: vars.$dark-color solid 1.5em;
+  a{
+    color: black;
+    width: 95%;
   }
 }

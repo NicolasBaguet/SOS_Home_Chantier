@@ -1,5 +1,6 @@
 import "./Realisations.scss";
 import Carousel from "../../components/Carousel/Carousel";
+import photosLions from "../../../data/photos-lions.json" with { type: "json" };
 
 function Realisations() {
 	return (
@@ -22,16 +23,7 @@ function Realisations() {
 				<div className="container">
 					<div className="serviceA">
 						<div className="serviceImg">
-							<Carousel
-								images={[
-									"./data/lions.png",
-									"./data/plan.jpg",
-									"./data/plan_2.jpg",
-									"./data/bureau.jpg",
-									"./data/travail_1.jpg",
-									"./data/travail_2.jpg",
-								]}
-							/>
+							<Carousel images={photosLions} />
 						</div>
 						<div className="serviceTxt">
 							<h4>Pub The Lions</h4>
@@ -70,30 +62,12 @@ function Realisations() {
 							</p>
 						</div>
 						<div className="serviceImg">
-							<Carousel
-								images={[
-									"./data/lions.png",
-									"./data/plan.jpg",
-									"./data/plan_2.jpg",
-									"./data/bureau.jpg",
-									"./data/travail_1.jpg",
-									"./data/travail_2.jpg",
-								]}
-							/>
+							<Carousel images={photosLions} />
 						</div>
 					</div>
 					<div className="serviceA">
 						<div className="serviceImg">
-							<Carousel
-								images={[
-									"./data/lions.png",
-									"./data/plan.jpg",
-									"./data/plan_2.jpg",
-									"./data/bureau.jpg",
-									"./data/travail_1.jpg",
-									"./data/travail_2.jpg",
-								]}
-							/>
+							<Carousel images={photosLions} />
 						</div>
 						<div className="serviceTxt">
 							<h4>3-TROISIEME RENCONTRE</h4>
@@ -128,30 +102,12 @@ function Realisations() {
 							</p>
 						</div>
 						<div className="serviceImg">
-							<Carousel
-								images={[
-									"./data/lions.png",
-									"./data/plan.jpg",
-									"./data/plan_2.jpg",
-									"./data/bureau.jpg",
-									"./data/travail_1.jpg",
-									"./data/travail_2.jpg",
-								]}
-							/>
+							<Carousel images={photosLions} />
 						</div>
 					</div>
 					<div className="serviceA">
 						<div className="serviceImg">
-							<Carousel
-								images={[
-									"./data/lions.png",
-									"./data/plan.jpg",
-									"./data/plan_2.jpg",
-									"./data/bureau.jpg",
-									"./data/travail_1.jpg",
-									"./data/travail_2.jpg",
-								]}
-							/>
+							<Carousel images={photosLions} />
 						</div>
 						<div className="serviceTxt">
 							<h4>5-CINQUIEME RENCONTRE</h4>
@@ -186,16 +142,7 @@ function Realisations() {
 							</p>
 						</div>
 						<div className="serviceImg">
-							<Carousel
-								images={[
-									"./data/lions.png",
-									"./data/plan.jpg",
-									"./data/plan_2.jpg",
-									"./data/bureau.jpg",
-									"./data/travail_1.jpg",
-									"./data/travail_2.jpg",
-								]}
-							/>{" "}
+							<Carousel images={photosLions} />
 						</div>
 					</div>
 				</div>

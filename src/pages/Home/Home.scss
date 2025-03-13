@@ -1,50 +1,20 @@
 @use '../../Styles/vars';
 
 .home{
-.hero, .rates{
-  min-height: 20em;
-}
-.container{
-  padding : vars.$gutter;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: vars.$gutter
-}
-.hero{
-  padding-top: 5em;
-  .filterblack{
-    background-color: rgba(0, 0, 0, 0.2);
-    height: 20em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    h2{
-      color: vars.$light-color;
-    }
-  };
-  .backgroundImg{
-    background-image: url("./data/deco.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    h2{
-      text-shadow: 1.5px 1.5px 2px black;
+  .rates{
+    min-height: 20em;
+  }
+  .content{
+    a{
+      color: black;
+      width: 95%;
     }
   }
-}
-.content{
-  a{
-    color: black;
-    width: 95%;
+  .rate{
+    background-color: vars.$blue;
+    padding: 1em;
+    border-radius: 4px;
+    width: 20rem;
+    height: 10rem;
   }
-}
-.rate{
-  background-color: vars.$blue;
-  padding: 1em;
-  border-radius: 4px;
-  width: 20rem;
-  height: 10rem;
-}
 }
