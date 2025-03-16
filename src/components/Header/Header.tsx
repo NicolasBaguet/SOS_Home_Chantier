@@ -4,7 +4,13 @@ import { useEffect, useRef, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
-function Header() {
+function Header({
+	setIsMenuOpen,
+	isMenuOpen,
+}: {
+	setIsMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
+	isMenuOpen: boolean;
+}) {
 	const [isMobile, setIsMobile] = useState(false);
 	const [opacity, setOpacity] = useState(1);
 	const [prevScrollY, setPrevScrollY] = useState(0);
@@ -50,7 +56,7 @@ function Header() {
 		<header className="header" style={{ opacity: opacity }}>
 			<Link to="/" aria-label="retour accueil">
 				<div className="logo">
-					<img src="./data/SOS_logo2.png" alt="Logo site" />
+					<img src="/SOS_logo2.png" alt="Logo site" />
 				</div>
 			</Link>
 			{isMobile ? (
@@ -58,10 +64,7 @@ function Header() {
 					className="menuButton"
 					type="button"
 					onClick={() => {
-						window.scrollTo({
-							top: document.documentElement.scrollHeight,
-							behavior: "smooth",
-						});
+						setIsMenuOpen(!isMenuOpen);
 					}}
 				>
 					<FontAwesomeIcon icon={faBars} />

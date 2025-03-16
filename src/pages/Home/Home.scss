@@ -1,6 +1,9 @@
 @use '../../Styles/vars';
 
 .home{
+  .backgroundImg{
+    background-image: url("/deco.jpg");
+  }
   .rates{
     min-height: 20em;
   }

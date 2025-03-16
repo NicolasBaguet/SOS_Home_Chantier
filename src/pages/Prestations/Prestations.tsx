@@ -21,7 +21,7 @@ function Prestations() {
 				<div className="container">
 					<div className="serviceA">
 						<div className="serviceImg">
-							<img src="./data/plan_2.jpg" alt="dessin ou logo" />
+							<img src="/plan_2.jpg" alt="dessin ou logo" />
 						</div>
 						<div className="serviceTxt">
 							<h4>Première rencontre</h4>
@@ -67,12 +67,12 @@ function Prestations() {
 							</p>
 						</div>
 						<div className="serviceImg">
-							<img src="./data/travail_1.jpg" alt="dessin ou logo" />
+							<img src="/travail_1.jpg" alt="dessin ou logo" />
 						</div>
 					</div>
 					<div className="serviceA">
 						<div className="serviceImg">
-							<img src="./data/travail_2.jpg" alt="dessin ou logo" />
+							<img src="/travail_2.jpg" alt="dessin ou logo" />
 						</div>
 						<div className="serviceTxt">
 							<h4>Projection</h4>
@@ -111,12 +111,12 @@ function Prestations() {
 							</p>
 						</div>
 						<div className="serviceImg">
-							<img src="./data/bureau.jpg" alt="dessin ou logo" />
+							<img src="/bureau.jpg" alt="dessin ou logo" />
 						</div>
 					</div>
 					<div className="serviceA">
 						<div className="serviceImg">
-							<img src="./data/plan.jpg" alt="dessin ou logo" />
+							<img src="/plan.jpg" alt="dessin ou logo" />
 						</div>
 						<div className="serviceTxt">
 							<h4>Désencombrement</h4>
@@ -160,7 +160,7 @@ function Prestations() {
 							</ul>
 						</div>
 						<div className="serviceImg">
-							<img src="./data/travail_2.jpg" alt="dessin ou logo" />
+							<img src="/travail_2.jpg" alt="dessin ou logo" />
 						</div>
 					</div>
 				</div>

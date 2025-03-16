@@ -1,6 +1,9 @@
 @use '../../Styles/vars';
 
 .prestations{
+  .backgroundImg{
+    background-image: url("/bureau.jpg");
+  }
   .content{
     min-height: 20em;
   }

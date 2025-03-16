@@ -8,9 +8,11 @@ import LegalMentions from "../../pages/LegalsMentions/LegalMentions";
 import Prestations from "../../pages/Prestations/Prestations";
 import Realisations from "../../pages/Realisations/Realisations";
 import About from "../../pages/About/About";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import Menu from "../Menu/Menu";
 
 function App() {
+	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const location = useLocation();
 	// biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
 	useEffect(() => {
@@ -19,7 +21,8 @@ function App() {
 
 	return (
 		<div className="app">
-			<Header />
+			<Header setIsMenuOpen={setIsMenuOpen} isMenuOpen={isMenuOpen} />
+			{isMenuOpen && <Menu />}
 			<main>
 				<Routes>
 					<Route path="/" element={<Home />} />

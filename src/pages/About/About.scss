@@ -1,6 +1,9 @@
 @use '../../Styles/vars';
 
 .about{
+  .backgroundImg{
+    background-image: url("/plan.jpg");
+  }
   .content{
     h3{
       padding-left: 6em;

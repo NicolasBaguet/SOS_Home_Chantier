@@ -1,6 +1,9 @@
 @use '../../Styles/vars';
 
 .realisations{
+  .backgroundImg{
+    background-image: url("/travail_1.jpg");
+  }
   .content{
     min-height: 20em;
   }

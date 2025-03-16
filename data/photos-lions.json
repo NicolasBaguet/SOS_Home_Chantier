@@ -1,8 +1,8 @@
 [
-	"./data/lions.png",
-	"./data/plan.jpg",
-	"./data/plan_2.jpg",
-	"./data/bureau.jpg",
-	"./data/travail_1.jpg",
-	"./data/travail_2.jpg"
+	"/lions.png",
+	"/plan.jpg",
+	"/plan_2.jpg",
+	"/bureau.jpg",
+	"/travail_1.jpg",
+	"/travail_2.jpg"
 ]

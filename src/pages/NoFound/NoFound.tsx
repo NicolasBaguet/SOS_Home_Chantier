@@ -1,6 +1,8 @@
+import "./NoFound.scss";
+
 function NoFound() {
 	return (
-		<div>
+		<div className="noFound">
 			<section className="hero">
 				<div className="backgroundImg">
 					<div className="filterblack">
