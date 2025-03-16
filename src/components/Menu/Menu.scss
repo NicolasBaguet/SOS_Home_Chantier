@@ -1,42 +1,68 @@
 @use '../../Styles/vars';
 
-.menuNav{
-  background-color: vars.$orange;
-  display: flex;
-  position: absolute;
+.menuNavBackground{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 20;
-  top: 3em;
-  width: 10em;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1em;
-  nav{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: vars.$gutter;
-    a, button{
-      &:hover{
-        scale: 1.2;
-        transition: ease 0.3s;
+  opacity: 0;
+  visibility: hidden; 
+  transition: opacity 0.5s ease-in-out, visibility 0.5s;
+
+  &.isOpen {
+    visibility: visible; 
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .menuNav{
+    background-color: vars.$orange;
+    border: 2px solid vars.$orange-dark;
+    position: fixed;
+    top: 0;
+    z-index: 21;
+    right: 0;
+    width: 280px;
+    height: 100%;
+    padding: 1em;
+    box-shadow: -2px 0px 10px rgba(0, 0, 0, 0.2);
+    transform: translateX(100%); // Commence hors de l'écran
+    transition: transform 0.8s ease-in-out;
+    &.isOpen {
+      transform: translateX(0); // Glisse dans l'écran
+    }
+
+    nav{
+      font-size: 2em;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: vars.$gutter;
+      a, button{
+        &:hover{
+          scale: 1.2;
+          transition: ease 0.3s;
+        }
       }
     }
-  }
-  button{
-    border: none;
-    background-color: vars.$orange;
-  }
-  a, button{
-    color: black;
-    text-decoration: none;
-    display: flex;
-    font-weight: 700;
-    align-items: center;
-    gap: 1em;
-    transition: ease 0.3s;
-  }
-  .active{
-    color: vars.$light-color;
+    button{
+      border: none;
+      background-color: vars.$orange;
+    }
+    a, button{
+      color: black;
+      text-decoration: none;
+      display: flex;
+      font-weight: 700;
+      align-items: center;
+      gap: 1em;
+      transition: ease 0.3s;
+    }
+    .active{
+      color: vars.$light-color;
+    }
   }
 }

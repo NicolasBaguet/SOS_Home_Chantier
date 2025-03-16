@@ -22,7 +22,7 @@ function App() {
 	return (
 		<div className="app">
 			<Header setIsMenuOpen={setIsMenuOpen} isMenuOpen={isMenuOpen} />
-			{isMenuOpen && <Menu />}
+			<Menu setIsMenuOpen={setIsMenuOpen} isMenuOpen={isMenuOpen} />
 			<main>
 				<Routes>
 					<Route path="/" element={<Home />} />

@@ -1,10 +1,22 @@
 import { NavLink } from "react-router";
 import "./Menu.scss";
 
-function Menu() {
+function Menu({
+	setIsMenuOpen,
+	isMenuOpen,
+}: {
+	setIsMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
+	isMenuOpen: boolean;
+}) {
 	return (
-		<div className="menuNavBackground">
-			<div className="menuNav">
+		// biome-ignore lint/a11y/useKeyWithClickEvents: <explanation>
+		<div
+			className={`menuNavBackground ${isMenuOpen ? "isOpen" : ""}`}
+			onClick={() => {
+				setIsMenuOpen(false);
+			}}
+		>
+			<div className={`menuNav ${isMenuOpen ? "isOpen" : ""}`}>
 				<nav>
 					<NavLink to="/" aria-label="retour accueil">
 						Accueil
