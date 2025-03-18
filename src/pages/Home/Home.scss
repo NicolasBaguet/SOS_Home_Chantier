@@ -13,11 +13,50 @@
       width: 95%;
     }
   }
+  .service{
+    padding: 2em;
+    border-radius: 0.5em;
+    width: 100%;
+    min-height: 15rem;
+    background-color: vars.$blue;
+    box-shadow: 6px 6px 4px grey;
+    display: flex;
+    overflow: hidden;
+    gap: 4em;
+    @media(max-width: 800px){
+      flex-direction: column;
+    }
+    .serviceImg{
+      height: 90%;
+      width: 20em;
+      margin: auto;
+      img{
+        height: 100%;
+        object-fit: cover;
+        border-radius: 0.5em;
+      }
+    }
+    .serviceTxt{
+      display: flex;
+      flex-direction: column;
+      text-align: justify;
+      justify-content: center;
+      width: 100%;
+      h4{
+        text-align: center;
+        padding: 1em;
+      }
+      p{
+        padding-top: 2em;
+      }
+    }
+  }
   .rate{
     background-color: vars.$blue;
-    padding: 1em;
-    border-radius: 4px;
+    padding: 1.5em;
+    border-radius: 8px;
+    box-shadow: 6px 6px 4px grey;
     width: 20rem;
-    height: 10rem;
+    min-height: 10rem;
   }
 }

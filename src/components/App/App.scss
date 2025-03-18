@@ -13,12 +13,15 @@ main{
 h3{
   text-align: center;
   text-transform: uppercase;
-  padding: 1em;
+  padding: 0.8em;
   color: vars.$orange;
   text-shadow: 0.5px 0.5px 0.5px rgb(228, 129, 0);
   font-size: 3em;
   font-weight: 600;
   background-color: vars.$dark-color;
+  @media(max-width: 500px){
+    font-size: 2em;
+  }
 }
 
 h4{
@@ -29,6 +32,11 @@ h4{
 
 a{
   text-decoration: none;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .hero{
@@ -60,7 +68,7 @@ a{
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  gap: 6em
+  gap: 4em
 }
 
 .citation{
@@ -68,7 +76,7 @@ a{
   margin: 2em 1em;
   padding: 0.5em;
   border-radius: 2px;
-  text-shadow: 0.3px 0.3px 0.3px rgb(228, 129, 0);
+  text-shadow: 0.3px 0.3px 0.3px rgb(209, 118, 0);
   .citationTxt{
     font-style: italic;
   }
@@ -78,8 +86,10 @@ a{
   }
 }
 .content{
-  border-left: vars.$dark-color solid 1.5em;
-  border-right: vars.$dark-color solid 1.5em;
+  @media(min-width: 500px){
+    border-left: vars.$dark-color solid 1.5em;
+    border-right: vars.$dark-color solid 1.5em;
+  }
   a{
     color: black;
     width: 95%;

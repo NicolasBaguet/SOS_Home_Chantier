@@ -21,12 +21,13 @@
   .menuNav{
     background-color: vars.$orange;
     border: 2px solid vars.$orange-dark;
+    border-radius: 18px 0 0 18px;
     position: fixed;
-    top: 0;
+    top: 7em;
     z-index: 21;
     right: 0;
-    width: 280px;
-    height: 100%;
+    width: 170px;
+    height: 18em;
     padding: 1em;
     box-shadow: -2px 0px 10px rgba(0, 0, 0, 0.2);
     transform: translateX(100%); // Commence hors de l'écran
@@ -36,7 +37,7 @@
     }
 
     nav{
-      font-size: 2em;
+      // font-size: 2em;
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
