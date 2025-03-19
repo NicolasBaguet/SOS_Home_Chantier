@@ -12,17 +12,18 @@
     box-shadow: 6px 6px 4px grey;
     display: flex;
     overflow: hidden;
+    box-shadow: 6px 6px 4px black;
+    @media(min-width: 800px){
+      width: 45%;
+    }
     .serviceImg{
       height: 70%;
-      width: 20em;
+      width: 15em;
       margin: auto;
-      @media(max-width: 800px){
-        display: none;
-      }
-      img{
+      &>*{
         height: 100%;
+        color: vars.$orange-dark;
         object-fit: cover;
-        border-radius: 0.5em;
       }
     }
     .serviceTxt{
@@ -40,19 +41,11 @@
     }
   }
   .serviceA{
+    flex-direction: column;
     background-color: vars.$green;
-    .serviceTxt{
-      @media(min-width: 800px){
-        padding-left: 5em;
-      }
-    }
   }
   .serviceB{
+    flex-direction: column-reverse;
     background-color: vars.$brown;
-    .serviceTxt{
-      @media(min-width: 800px){
-        padding-right: 5em;
-      }
-    }
   }
   }

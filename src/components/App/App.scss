@@ -86,10 +86,9 @@ ul {
   }
 }
 .content{
+  background-color: vars.$dark-color;
   @media(min-width: 500px){
-    border-left: vars.$dark-color solid 1.5em;
-    border-right: vars.$dark-color solid 1.5em;
-  }
+    border: black solid 1.5em;  }
   a{
     color: black;
     width: 95%;

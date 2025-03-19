@@ -1,4 +1,11 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./About.scss";
+import {
+	faGears,
+	faHandHoldingHeart,
+	faHandsPraying,
+	faPeopleArrows,
+} from "@fortawesome/free-solid-svg-icons";
 
 function About() {
 	return (
@@ -6,7 +13,7 @@ function About() {
 			<section className="hero">
 				<div className="backgroundImg">
 					<div className="filterblack">
-						<h2>Un temps pour être bien chez soi</h2>
+						<h2>Chaque projet débute par une écoute active</h2>
 					</div>
 				</div>
 			</section>
@@ -22,7 +29,7 @@ function About() {
 				<div className="container">
 					<div className="serviceA">
 						<div className="serviceImg">
-							<img src="/plan_2.jpg" alt="dessin ou logo" />
+							<FontAwesomeIcon icon={faHandsPraying} />
 						</div>
 						<div className="serviceTxt">
 							<h4>Respect de notre environnement</h4>
@@ -80,12 +87,12 @@ function About() {
 							</p>
 						</div>
 						<div className="serviceImg">
-							<img src="/travail_1.jpg" alt="dessin ou logo" />
+							<FontAwesomeIcon icon={faHandHoldingHeart} />
 						</div>
 					</div>
 					<div className="serviceA">
 						<div className="serviceImg">
-							<img src="/travail_2.jpg" alt="dessin ou logo" />
+							<FontAwesomeIcon icon={faPeopleArrows} />
 						</div>
 						<div className="serviceTxt">
 							<h4>Écoute des Besoins</h4>
@@ -139,7 +146,7 @@ function About() {
 							</p>
 						</div>
 						<div className="serviceImg">
-							<img src="/bureau.jpg" alt="dessin ou logo" />
+							<FontAwesomeIcon icon={faGears} />
 						</div>
 					</div>
 				</div>

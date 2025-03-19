@@ -16,6 +16,9 @@
     overflow: hidden;
     display: flex;
     align-items: center;
+    &>*{
+      box-shadow: 6px 6px 4px black;
+    }
     @media(max-width: 800px){
       flex-direction: column;
     }

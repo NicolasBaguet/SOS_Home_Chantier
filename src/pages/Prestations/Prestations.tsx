@@ -6,7 +6,7 @@ function Prestations() {
 			<section className="hero">
 				<div className="backgroundImg">
 					<div className="filterblack">
-						<h2>Un temps pour être bien chez soi</h2>
+						<h2>Des solutions créative pour chaque défi d'espace</h2>
 					</div>
 				</div>
 			</section>

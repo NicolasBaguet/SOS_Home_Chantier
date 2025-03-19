@@ -6,18 +6,21 @@ function NoFound() {
 			<section className="hero">
 				<div className="backgroundImg">
 					<div className="filterblack">
-						<h2>Un temps pour être bien chez soi</h2>
+						<h2>Les erreurs sont les portes de la découverte</h2>
 					</div>
 				</div>
 			</section>
 			<div className="citation">
 				<h2 className="citationTxt">
-					« La simplicité est la clé de toute véritable élégance. »
+					« Une personne qui n'a jamais fait d'erreur n'a jamais rien essayé de
+					nouveau. »
 				</h2>
-				<h2 className="citationAuthor">Coco Chanel</h2>
+				<h2 className="citationAuthor">Albert Einstein</h2>
 			</div>
-			<h3>404 Page non trouvée</h3>
-			<p>La page actuelle n'existe pas.</p>
+			<div className="content">
+				<h3>erreur 404</h3>
+				<h4>La page actuelle n'existe pas</h4>
+			</div>
 		</div>
 	);
 }
