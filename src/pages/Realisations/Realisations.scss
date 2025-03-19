@@ -7,6 +7,11 @@
   .content{
     min-height: 20em;
   }
+  .container{
+    @media(max-width: 500px){
+      padding: 0;
+    }
+  }
   .serviceA, .serviceB{
     padding: 1em;
     border-radius: 8px;

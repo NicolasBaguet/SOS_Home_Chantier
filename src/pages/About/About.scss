@@ -4,15 +4,19 @@
   .backgroundImg{
     background-image: url("/plan.jpg");
   }
+  .container{
+    @media(max-width: 500px){
+      padding: 0;
+    }
+  }
   .serviceA, .serviceB{
     padding: 2em;
     border-radius: 0.5em;
     width: 100%;
     min-height: 25rem;
-    box-shadow: 6px 6px 4px grey;
     display: flex;
     overflow: hidden;
-    box-shadow: 6px 6px 4px black;
+    // box-shadow: 6px 6px 4px black;
     @media(min-width: 800px){
       width: 45%;
     }
@@ -27,6 +31,7 @@
       }
     }
     .serviceTxt{
+      color: white;
       display: flex;
       flex-direction: column;
       text-align: justify;
@@ -42,10 +47,10 @@
   }
   .serviceA{
     flex-direction: column;
-    background-color: vars.$green;
+    // background-color: vars.$green;
   }
   .serviceB{
     flex-direction: column-reverse;
-    background-color: vars.$brown;
+    // background-color: vars.$brown;
   }
   }

@@ -1,4 +1,5 @@
 import { Route, Routes, useLocation } from "react-router-dom";
+import { AnimatePresence, motion } from "framer-motion";
 import Header from "../Header/Header";
 import Home from "../../pages/Home/Home";
 import "./App.scss";
@@ -24,19 +25,75 @@ function App() {
 			<Header setIsMenuOpen={setIsMenuOpen} isMenuOpen={isMenuOpen} />
 			<Menu setIsMenuOpen={setIsMenuOpen} isMenuOpen={isMenuOpen} />
 			<main>
-				<Routes>
-					<Route path="/" element={<Home />} />
-					{/* services parmi les 3 pages de services */}
-					<Route path="/prestations" element={<Prestations />} />
-					<Route path="/realisations" element={<Realisations />} />
-					<Route path="/propos" element={<About />} />
-					<Route path="/mentions" element={<LegalMentions />} />
-					<Route path="*" element={<NoFound />} />
-				</Routes>
+				<AnimatePresence mode="wait">
+					<Routes location={location} key={location.pathname}>
+						<Route
+							path="/"
+							element={
+								<PageWrapper>
+									<Home />
+								</PageWrapper>
+							}
+						/>
+						<Route
+							path="/prestations"
+							element={
+								<PageWrapper>
+									<Prestations />
+								</PageWrapper>
+							}
+						/>
+						<Route
+							path="/realisations"
+							element={
+								<PageWrapper>
+									<Realisations />
+								</PageWrapper>
+							}
+						/>
+						<Route
+							path="/propos"
+							element={
+								<PageWrapper>
+									<About />
+								</PageWrapper>
+							}
+						/>
+						<Route
+							path="/mentions"
+							element={
+								<PageWrapper>
+									<LegalMentions />
+								</PageWrapper>
+							}
+						/>
+						<Route
+							path="*"
+							element={
+								<PageWrapper>
+									<NoFound />
+								</PageWrapper>
+							}
+						/>
+					</Routes>
+				</AnimatePresence>
 			</main>
 			<Footer />
 		</div>
 	);
 }
+
+import { ReactNode } from "react";
+
+const PageWrapper = ({ children }: { children: ReactNode }) => (
+	<motion.div
+		initial={{ opacity: 0, x: 20 }}
+		animate={{ opacity: 1, x: 0 }}
+		exit={{ opacity: 0, x: -20 }}
+		transition={{ duration: 0.5 }}
+	>
+		{children}
+	</motion.div>
+);
 
 export default App;
