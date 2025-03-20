@@ -5,7 +5,7 @@
     background-image: url("/deco.jpg");
   }
   .rates{
-    min-height: 20em;
+    min-height: 10em;
   }
   .content{
     a{
@@ -14,7 +14,7 @@
     }
   }
   .service{
-    padding: 2em;
+
     border-radius: 0.5em;
     width: 100%;
     min-height: 15rem;
@@ -27,21 +27,35 @@
       flex-direction: column;
     }
     .serviceImg{
-      height: 90%;
-      width: 20em;
-      margin: auto;
+      min-height: 100%;
+      min-width: 50%;
       img{
         height: 100%;
+        width: 100%;
         object-fit: cover;
         border-radius: 0.5em;
       }
     }
     .serviceTxt{
+      margin-top: 2em;
+      margin-bottom: 2em;
+      padding: 1em;
       display: flex;
       flex-direction: column;
       text-align: justify;
       justify-content: center;
       width: 100%;
+      background-color: vars.$blue-light;
+      border-radius: 0.5em;
+      position: relative;
+      @media(min-width: 800px){
+        right: 8em;
+      }
+      @media(max-width: 800px){
+        bottom: 8em;
+        width : 90%;
+        margin: auto;
+      }
       h4{
         text-align: center;
         padding: 1em;
