@@ -12,6 +12,14 @@
       padding: 0;
     }
   }
+  .serviceRate{
+    color: white;
+    padding: 2em;
+    padding-top: 0;
+    p{
+      font-style: italic;
+    }
+  }
   .serviceA, .serviceB{
     padding: 1em;
     border-radius: 8px;
@@ -21,9 +29,6 @@
     overflow: hidden;
     display: flex;
     align-items: center;
-    &>*{
-      box-shadow: 6px 6px 4px black;
-    }
     @media(max-width: 800px){
       flex-direction: column;
     }
@@ -55,6 +60,7 @@
       flex-direction: column;
       text-align: justify;
       border-radius: 0.5em;
+      box-shadow: 6px 6px 4px black;
       width: 100%;
       padding: 2em;
       h4{

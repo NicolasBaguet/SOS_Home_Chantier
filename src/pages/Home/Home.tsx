@@ -1,5 +1,4 @@
 import "./Home.scss";
-import ratesMessage from "../../../data/rate.json" with { type: "json" };
 
 function Home() {
 	return (
@@ -21,7 +20,7 @@ function Home() {
 			<section className="content">
 				<h3>Mon objectif</h3>
 				<div className="container">
-					<div className="service">
+					<div className="serviceA">
 						<div className="serviceImg">
 							<img src="/plan_2.jpg" alt="dessin ou logo" />
 						</div>
@@ -47,10 +46,7 @@ function Home() {
 				</div>
 				<h3>Mes convictions</h3>
 				<div className="container">
-					<div className="service">
-						<div className="serviceImg">
-							<img src="/plan_2.jpg" alt="dessin ou logo" />
-						</div>
+					<div className="serviceB">
 						<div className="serviceTxt">
 							<ul>
 								<li>Penser votre projet</li>
@@ -62,11 +58,14 @@ function Home() {
 								<li>C’est prendre le temps qu’il faut pour ne pas en perdre</li>
 							</ul>
 						</div>
+						<div className="serviceImg">
+							<img src="/plan_2.jpg" alt="dessin ou logo" />
+						</div>
 					</div>
 				</div>
 				<h3>Créer votre projet</h3>
 				<div className="container">
-					<div className="service">
+					<div className="serviceA">
 						<div className="serviceImg">
 							<img src="/plan_2.jpg" alt="dessin ou logo" />
 						</div>
@@ -84,10 +83,7 @@ function Home() {
 				</div>
 				<h3>Vous accompagner</h3>
 				<div className="container">
-					<div className="service">
-						<div className="serviceImg">
-							<img src="/plan_2.jpg" alt="dessin ou logo" />
-						</div>
+					<div className="serviceB">
 						<div className="serviceTxt">
 							<ul>
 								<li>
@@ -99,11 +95,14 @@ function Home() {
 								</li>
 							</ul>
 						</div>
+						<div className="serviceImg">
+							<img src="/plan_2.jpg" alt="dessin ou logo" />
+						</div>
 					</div>
 				</div>
 				<h3>Mon engagement, votre satisfaction</h3>
 				<div className="container">
-					<div className="service">
+					<div className="serviceA">
 						<div className="serviceImg">
 							<img src="/plan_2.jpg" alt="dessin ou logo" />
 						</div>
@@ -117,15 +116,6 @@ function Home() {
 							</p>
 						</div>
 					</div>
-				</div>
-				<h3>Nos avis</h3>
-				<div className="container">
-					{ratesMessage.map((message) => (
-						<div key={message.name} className="rate">
-							<h4>{message.name}</h4>
-							<p>{message.content}</p>
-						</div>
-					))}
 				</div>
 			</section>
 		</div>

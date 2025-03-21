@@ -4,16 +4,13 @@
   .backgroundImg{
     background-image: url("/deco.jpg");
   }
-  .rates{
-    min-height: 10em;
-  }
   .content{
     a{
       color: black;
       width: 95%;
     }
   }
-  .service{
+  .serviceA, .serviceB{
 
     border-radius: 0.5em;
     width: 100%;
@@ -48,14 +45,6 @@
       background-color: vars.$blue-light;
       border-radius: 0.5em;
       position: relative;
-      @media(min-width: 800px){
-        right: 8em;
-      }
-      @media(max-width: 800px){
-        bottom: 8em;
-        width : 90%;
-        margin: auto;
-      }
       h4{
         text-align: center;
         padding: 1em;
@@ -65,12 +54,32 @@
       }
     }
   }
-  .rate{
-    background-color: vars.$blue;
-    padding: 1.5em;
-    border-radius: 8px;
-    box-shadow: 6px 6px 4px grey;
-    width: 20rem;
-    min-height: 10rem;
+  .serviceA{
+    background-color: vars.$green;
+    .serviceTxt{
+      background-color: vars.$green-light;
+      @media(min-width: 800px){
+        right: 8em;
+      }
+      @media(max-width: 800px){
+        bottom: 7em;
+        width : 90%;
+        margin: auto;
+      }
+    }
+  }
+  .serviceB{
+    background-color: vars.$brown;
+    .serviceTxt{
+      background-color: vars.$brown-light;
+      @media(min-width: 800px){
+        left: 8em;
+      }
+      @media(max-width: 800px){
+        top: 7em;
+        width : 90%;
+        margin: auto;
+      }
+    }
   }
 }
