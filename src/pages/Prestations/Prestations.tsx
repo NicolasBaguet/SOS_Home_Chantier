@@ -1,3 +1,4 @@
+import Nav from "../../components/Nav/Nav";
 import "./Prestations.scss";
 
 function Prestations() {
@@ -10,6 +11,7 @@ function Prestations() {
 					</div>
 				</div>
 			</section>
+			<Nav />
 			<div className="citation">
 				<h2 className="citationTxt">
 					« La simplicité est la clé de toute véritable élégance. »

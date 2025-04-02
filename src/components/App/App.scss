@@ -18,7 +18,7 @@ h3{
   text-shadow: 0.5px 0.5px 0.5px rgb(228, 129, 0);
   font-size: 3em;
   font-weight: 600;
-  background-color: vars.$dark-color;
+  // background-color: vars.$dark-color;
   @media(max-width: 500px){
     font-size: 2em;
   }
@@ -42,6 +42,9 @@ ul {
 .hero{
   min-height: 20em;
   padding-top: 5em;
+  @media(max-width: 700px){
+    padding-top: 10em;
+  }
   .filterblack{
     background-color: rgba(0, 0, 0, 0.2);
     height: 20em;
@@ -71,14 +74,49 @@ ul {
   gap: 4em
 }
 
+.brownBar{
+  background-color: vars.$orange-dark;
+  height: 2em;
+  width: 100%;
+}
+nav{
+  display: flex;
+  justify-content: center;
+  gap: vars.$gutter;
+  a, button{
+    &:hover{
+      scale: 1.2;
+      transition: ease 0.3s;
+    }
+  }
+  button{
+    border: none;
+    background-color: rgb(0, 0, 0, 0);
+  }
+}
+a, button{
+  color: black;
+  text-decoration: none;
+  display: flex;
+  font-weight: 700;
+  align-items: center;
+  gap: 1em;
+  transition: ease 0.3s;
+}
+.active{
+  color: vars.$light-color;
+}
+
 .citation{
-  color: vars.$orange-dark;
+  color: vars.$brown;
   margin: 2em 1em;
   padding: 0.5em;
   border-radius: 2px;
   text-shadow: 0.3px 0.3px 0.3px rgb(209, 118, 0);
   .citationTxt{
     font-style: italic;
+    text-transform: uppercase;
+    font-weight: 500;
   }
   .citationAuthor{
     text-align: end;
@@ -86,9 +124,9 @@ ul {
   }
 }
 .content{
-  background-color: vars.$dark-color;
-  @media(min-width: 500px){
-    border: black solid 1.5em;  }
+  background: radial-gradient(circle, rgba(124, 124, 124, 0.25) 65%, rgba(0, 0, 0, 1) 85%);
+  // @media(min-width: 500px){
+  //   border: black solid 1.5em;  }
   a{
     color: black;
     width: 95%;

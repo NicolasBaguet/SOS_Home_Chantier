@@ -1,4 +1,5 @@
 import "./Home.scss";
+import Nav from "../../components/Nav/Nav";
 
 function Home() {
 	return (
@@ -9,6 +10,7 @@ function Home() {
 						<h2>Un temps pour être bien chez soi</h2>
 					</div>
 				</div>
+				<Nav />
 			</section>
 			<div className="citation">
 				<h2 className="citationTxt">

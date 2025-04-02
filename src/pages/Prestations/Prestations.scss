@@ -12,6 +12,7 @@
     min-height: 25rem;
     box-shadow: 6px 6px 4px black;
     display: flex;
+    justify-content: center;
     overflow: hidden;
     .serviceImg{
       height: 100%;
@@ -30,7 +31,9 @@
       display: flex;
       flex-direction: column;
       text-align: justify;
-      width: 70%;
+      @media(min-width: 800px){
+        width: 70%;
+      }
       h4{
         text-align: center;
         padding: 1em;

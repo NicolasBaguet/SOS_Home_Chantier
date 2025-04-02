@@ -4,6 +4,7 @@ import photosLions from "../../../data/photosLions.json" with { type: "json" };
 import photosDore from "../../../data/photosMontDore.json" with {
 	type: "json",
 };
+import Nav from "../../components/Nav/Nav";
 
 function Realisations() {
 	return (
@@ -15,6 +16,7 @@ function Realisations() {
 					</div>
 				</div>
 			</section>
+			<Nav />
 			<div className="citation">
 				<h2 className="citationTxt">
 					« Les détails ne sont pas les détails. Ils font le design. »

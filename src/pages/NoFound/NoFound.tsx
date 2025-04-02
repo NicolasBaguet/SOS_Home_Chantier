@@ -1,3 +1,4 @@
+import Nav from "../../components/Nav/Nav";
 import "./NoFound.scss";
 
 function NoFound() {
@@ -10,6 +11,7 @@ function NoFound() {
 					</div>
 				</div>
 			</section>
+			<Nav />
 			<div className="citation">
 				<h2 className="citationTxt">
 					« Une personne qui n'a jamais fait d'erreur n'a jamais rien essayé de

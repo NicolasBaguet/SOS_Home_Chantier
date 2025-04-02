@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router";
+import { Link } from "react-router";
 import "./Header.scss";
 import { useEffect, useRef, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -18,7 +18,7 @@ function Header({
 
 	useEffect(() => {
 		const checkScreenWidth = () => {
-			setIsMobile(window.innerWidth < 800);
+			setIsMobile(window.innerWidth < 700);
 		};
 
 		const handleScroll = () => {
@@ -54,12 +54,31 @@ function Header({
 
 	return (
 		<header className="header" style={{ opacity: opacity }}>
-			<Link to="/" aria-label="retour accueil">
-				<div className="logo">
-					<img src="/SOS_logo2.png" alt="Logo site" />
-				</div>
-			</Link>
 			{isMobile ? (
+				<>
+					<div>
+						<Link to="/" aria-label="retour accueil">
+							<div className="logo">
+								<img src="/SOS_logo_txt.png" alt="Logo site" />
+							</div>
+						</Link>
+					</div>
+				</>
+			) : (
+				<>
+					<div>
+						<Link to="/" aria-label="retour accueil">
+							<div className="logo">
+								<img src="/SOS_logo.png" alt="Logo site" />
+							</div>
+						</Link>
+					</div>
+					<div className="title">
+						<h1>sos Home Harmony</h1>
+					</div>
+				</>
+			)}
+			<div className="headerBottom">
 				<button
 					className="menuButton"
 					type="button"
@@ -69,33 +88,7 @@ function Header({
 				>
 					<FontAwesomeIcon icon={faBars} />
 				</button>
-			) : (
-				<nav>
-					<NavLink to="/" aria-label="retour accueil">
-						Accueil
-					</NavLink>
-					<NavLink to="/prestations" aria-label="prestations">
-						Prestations
-					</NavLink>
-					<NavLink to="/propos" aria-label="À propos">
-						À propos
-					</NavLink>
-					<NavLink to="/realisations" aria-label="realisations">
-						Realisations
-					</NavLink>
-					<button
-						type="button"
-						onClick={() => {
-							window.scrollTo({
-								top: document.documentElement.scrollHeight,
-								behavior: "smooth",
-							});
-						}}
-					>
-						Me contacter
-					</button>
-				</nav>
-			)}
+			</div>
 		</header>
 	);
 }

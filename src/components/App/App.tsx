@@ -78,12 +78,14 @@ function App() {
 					</Routes>
 				</AnimatePresence>
 			</main>
+			<Nav />
 			<Footer />
 		</div>
 	);
 }
 
 import { ReactNode } from "react";
+import Nav from "../Nav/Nav";
 
 const PageWrapper = ({ children }: { children: ReactNode }) => (
 	<motion.div

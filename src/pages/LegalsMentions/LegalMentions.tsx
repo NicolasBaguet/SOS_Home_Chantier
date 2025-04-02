@@ -1,3 +1,4 @@
+import Nav from "../../components/Nav/Nav";
 import "./LegalMentions.scss";
 
 const LegalMentions = () => {
@@ -10,6 +11,7 @@ const LegalMentions = () => {
 					</div>
 				</div>
 			</section>
+			<Nav />
 			<div className="citation">
 				<h2 className="citationTxt">
 					« L’architecture est le jeu savant, correct et magnifique des formes

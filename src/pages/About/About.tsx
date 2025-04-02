@@ -6,6 +6,7 @@ import {
 	faHandsPraying,
 	faPeopleArrows,
 } from "@fortawesome/free-solid-svg-icons";
+import Nav from "../../components/Nav/Nav";
 
 function About() {
 	return (
@@ -17,6 +18,7 @@ function About() {
 					</div>
 				</div>
 			</section>
+			<Nav />
 			<div className="citation">
 				<h2 className="citationTxt">
 					« Une pièce vide est une histoire qui attend de se produire, et vous
