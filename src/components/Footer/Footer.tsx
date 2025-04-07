@@ -21,14 +21,13 @@ function Footer() {
 				</div>
 				<div className="link">
 					<Link to="mailto:soshomechantier@gmail.com">
-						<FontAwesomeIcon icon={faEnvelope} /> <br />
+						<FontAwesomeIcon icon={faEnvelope} />
 						soshomechantier@gmail.com
 					</Link>
 				</div>
 				<div className="link">
 					<Link to="tel:+33668986044">
 						<FontAwesomeIcon icon={faMobileScreenButton} />
-						<br />
 						06.68.98.60.44
 					</Link>
 				</div>

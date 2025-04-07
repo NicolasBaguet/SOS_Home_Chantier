@@ -26,15 +26,19 @@ function Nav() {
 					<NavLink to="/" aria-label="retour accueil">
 						Accueil
 					</NavLink>
+					<p>|</p>
 					<NavLink to="/prestations" aria-label="prestations">
 						Prestations
 					</NavLink>
+					<p>|</p>
 					<NavLink to="/propos" aria-label="À propos">
 						À propos
 					</NavLink>
+					<p>|</p>
 					<NavLink to="/realisations" aria-label="realisations">
 						Realisations
 					</NavLink>
+					<p>|</p>
 					<button
 						type="button"
 						onClick={() => {
