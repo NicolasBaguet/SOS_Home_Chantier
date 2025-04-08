@@ -53,7 +53,10 @@ function Header({
 	}, [prevScrollY]);
 
 	return (
-		<header className="header" style={{ opacity: opacity }}>
+		<header
+			className={opacity === 0 ? "header hidden" : "header"}
+			style={{ opacity: opacity }}
+		>
 			{isMobile ? (
 				<>
 					<div>

@@ -19,7 +19,10 @@ function App() {
 	const location = useLocation();
 	// biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
 	useEffect(() => {
-		window.scrollTo(0, 0);
+		window.scrollTo({
+			top: 0,
+			behavior: "smooth",
+		});
 	}, [location.pathname]);
 
 	const PageWrapper = ({ children }: { children: ReactNode }) => (

@@ -16,7 +16,7 @@ function Footer() {
 					<div>
 						<FontAwesomeIcon icon={faLocationDot} />
 						<br />
-						56350 Rodon
+						56350 Redon
 					</div>
 				</div>
 				<div className="link">
