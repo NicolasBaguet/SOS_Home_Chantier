@@ -48,7 +48,7 @@ function Nav() {
 							});
 						}}
 					>
-						Me contacter
+						Me contacter ↓
 					</button>
 				</nav>
 			) : (

@@ -10,6 +10,8 @@ import Prestations from "../../pages/Prestations/Prestations";
 import Realisations from "../../pages/Realisations/Realisations";
 import About from "../../pages/About/About";
 import { useEffect, useState } from "react";
+import { ReactNode } from "react";
+import Nav from "../Nav/Nav";
 import Menu from "../Menu/Menu";
 
 function App() {
@@ -19,6 +21,17 @@ function App() {
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, [location.pathname]);
+
+	const PageWrapper = ({ children }: { children: ReactNode }) => (
+		<motion.div
+			initial={{ opacity: 0, x: 20 }}
+			animate={{ opacity: 1, x: 0 }}
+			exit={{ opacity: 0, x: -20 }}
+			transition={{ duration: 0.5 }}
+		>
+			{children}
+		</motion.div>
+	);
 
 	return (
 		<div className="app">
@@ -83,19 +96,5 @@ function App() {
 		</div>
 	);
 }
-
-import { ReactNode } from "react";
-import Nav from "../Nav/Nav";
-
-const PageWrapper = ({ children }: { children: ReactNode }) => (
-	<motion.div
-		initial={{ opacity: 0, x: 20 }}
-		animate={{ opacity: 1, x: 0 }}
-		exit={{ opacity: 0, x: -20 }}
-		transition={{ duration: 0.5 }}
-	>
-		{children}
-	</motion.div>
-);
 
 export default App;

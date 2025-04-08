@@ -39,7 +39,7 @@ function Menu({
 							});
 						}}
 					>
-						Me contacter
+						Me contacter ↓
 					</button>
 				</nav>
 			</div>
