@@ -8,24 +8,28 @@
   .grey{
     background-color: vars.$dark-color;
     padding: 1em;
+    p, ul {
+      font-size: 1rem;
+      margin-bottom: 20px;
+      text-align: left; 
+    }
+    ul {
+      list-style-type: circle;
+      margin-left: 20px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    a {
+      padding: 5px 2px;
+      text-decoration: none;
+      color: white;
+      &:hover {
+        text-decoration: underline;
+      }
+    }    
   }
   &>*:not(.citation){
     color: white;
   }
-  p, ul {
-    font-size: 1rem;
-    margin-bottom: 20px;
-    text-align: left; 
-  }
-  ul {
-    list-style-type: circle;
-    margin-left: 20px;
-  }
-  li {
-    margin-bottom: 10px;
-  }
-  a {
-    padding: 5px 2px;
-    text-decoration: none;
-  }    
   };

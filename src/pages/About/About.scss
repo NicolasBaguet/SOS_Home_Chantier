@@ -15,18 +15,22 @@
     width: 100%;
     min-height: 25rem;
     display: flex;
+    align-items:flex-start; 
     overflow: hidden;
     // box-shadow: 6px 6px 4px black;
     @media(min-width: 800px){
       width: 45%;
     }
     .serviceImg{
-      height: 70%;
+      height: 15em;
       width: 15em;
       margin: auto;
+      background-color: rgb(243, 191, 123);
+      border-radius: 1em 4px 1em 4px;
+      padding: 1em;
       &>*{
         height: 100%;
-        color: vars.$orange-dark;
+        color: vars.$orange-alt;
         object-fit: cover;
       }
     }
@@ -39,6 +43,7 @@
       h4{
         text-align: center;
         padding: 1em;
+        color:  rgb(243, 191, 123);
       }
       p{
         padding-top: 2em;

@@ -58,8 +58,7 @@ function Carousel({ images }: { images: string[] }) {
 				{images.map((image, index) => (
 					// biome-ignore lint/a11y/useKeyWithClickEvents: <explanation>
 					<img
-						// biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
-						key={index}
+						key={image}
 						src={image}
 						// biome-ignore lint/a11y/noRedundantAlt: <explanation>
 						alt={`Image ${index + 1}`}

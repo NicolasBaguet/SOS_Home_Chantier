@@ -15,8 +15,8 @@ h3{
   text-transform: uppercase;
   padding: 0.8em;
   color: vars.$orange;
-  text-shadow: 0.5px 0.5px 0.5px rgb(228, 129, 0);
-  font-size: 3em;
+  text-shadow: 0.5px 0.5px 0.5px rgb(255, 145, 0);
+  font-size: 2.5em;
   font-weight: 600;
   // background-color: vars.$dark-color;
   @media(max-width: 500px){
@@ -73,9 +73,12 @@ ul {
   padding : vars.$gutter;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
-  gap: 4em
+  gap: 4em;
+  @media (max-width: 500px) {
+    padding: 0;
+  }
 }
 
 .brownBar{
@@ -118,17 +121,36 @@ nav{
     font-style: italic;
     text-transform: uppercase;
     font-weight: 500;
+    font-size: 2em;
   }
   .citationAuthor{
     text-align: end;
-    font-size: 2em;
+    font-size: 1.8em;
   }
 }
-.content{
-  background: radial-gradient(circle, rgba(124, 124, 124, 0.25) 65%, rgba(0, 0, 0, 1) 85%);
-  // @media(min-width: 500px){
-  //   border: black solid 1.5em;  }
-  a{
+// .content{
+//   background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(124, 124, 124, 0.5) 50%, rgba(0, 0, 0, 1) 100%);
+//   a{
+//     color: black;
+//     width: 95%;
+//   }
+// }
+.content {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 1) 0%,       /* Noir opaque en haut */
+      rgba(0, 0, 0, 0) 15%,      /* Transparent au milieu vertical */
+      rgba(0, 0, 0, 0) 85%,      /* Transparent au milieu vertical */
+      rgba(0, 0, 0, 1) 100%      /* Noir opaque en bas */
+    ),
+    linear-gradient(
+      to right,
+      rgba(0, 0, 0, 1) 0%,       /* Noir opaque à gauche */
+      rgba(124, 124, 124, 0.5) 50%,/* Gris au centre horizontal */
+      rgba(0, 0, 0, 1) 100%      /* Noir opaque à droite */
+    );
+  background-blend-mode: multiply; /* Combine les deux dégradés */
+  a {
     color: black;
     width: 95%;
   }

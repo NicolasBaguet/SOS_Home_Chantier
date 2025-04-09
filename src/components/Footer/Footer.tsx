@@ -33,6 +33,7 @@ function Footer() {
 				</div>
 				<div className="link">
 					<Link to="/mentions">Mentions légales</Link>
+					<Link to="/mentions">C.G.V.</Link>
 				</div>
 			</div>
 			<p>© 2025 SOS Home Chantier. Tous droits réservés.</p>
