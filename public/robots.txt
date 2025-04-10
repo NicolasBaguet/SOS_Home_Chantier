@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://sos-home-harmony.surge.sh/sitemap.xml
