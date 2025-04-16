@@ -150,7 +150,9 @@ nav{
     linear-gradient(
       to right,
       rgba(0, 0, 0, 1) 0%,       /* Noir opaque à gauche */
-      rgba(124, 124, 124, 0.5) 50%,/* Gris au centre horizontal */
+      rgba(124, 124, 124, 0.5) 25%,/* Gris au centre horizontal */
+      rgba(124, 124, 124, 0.7) 50%,/* Gris au centre horizontal */
+      rgba(124, 124, 124, 0.5) 75%,/* Gris au centre horizontal */
       rgba(0, 0, 0, 1) 100%      /* Noir opaque à droite */
     );
   background-blend-mode: multiply; /* Combine les deux dégradés */
