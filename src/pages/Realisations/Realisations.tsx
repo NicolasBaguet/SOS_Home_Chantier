@@ -1,6 +1,9 @@
 import "./Realisations.scss";
 import Carousel from "../../components/Carousel/Carousel";
 import photosLions from "../../../data/photosLions.json" with { type: "json" };
+import photosColchester from "../../../data/photosColchester.json" with {
+	type: "json",
+};
 import photosAllaire from "../../../data/photosAllaire.json" with {
 	type: "json",
 };
@@ -93,7 +96,7 @@ function Realisations() {
 					<div className="service">
 						<div className="serviceB">
 							<div className="serviceTxt">
-								<h4>2-DEUXIEME RENCONTRE</h4>
+								<h4>Logement Mont D'or</h4>
 								<p>
 									Lorem ipsum dolor sit amet consectetur adipisicing elit.
 									Tempora recusandae deserunt iusto atque reprehenderit suscipit
@@ -129,7 +132,7 @@ function Realisations() {
 								<Carousel images={photosAllaire} />
 							</div>
 							<div className="serviceTxt">
-								<h4>3-TROISIEME RENCONTRE</h4>
+								<h4>Logement Allaire</h4>
 								<p>
 									Lorem ipsum dolor sit amet consectetur adipisicing elit.
 									Tempora recusandae deserunt iusto atque reprehenderit suscipit
@@ -159,7 +162,7 @@ function Realisations() {
 					<div className="service">
 						<div className="serviceB">
 							<div className="serviceTxt">
-								<h4>4-QUATRIEME RENCONTRE</h4>
+								<h4>Logement Colchester</h4>
 								<p>
 									Lorem ipsum dolor sit amet consectetur adipisicing elit.
 									Tempora recusandae deserunt iusto atque reprehenderit suscipit
@@ -174,7 +177,7 @@ function Realisations() {
 								</p>
 							</div>
 							<div className="serviceImg">
-								<Carousel images={photosDore} />
+								<Carousel images={photosColchester} />
 							</div>
 						</div>
 						<div className="serviceRate">
